@@ -2,4 +2,8 @@
 
 members = [
   "ushift",
+  "ushift-chrome",
+  "ushift-jpath",
+  "ushift-spider",
+  "ushift-xpath"
 ]

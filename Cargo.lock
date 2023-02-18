@@ -5,3 +5,19 @@ version = 3
 [[package]]
 name = "ushift"
 version = "0.0.0"
+
+[[package]]
+name = "ushift-chrome"
+version = "0.1.0"
+
+[[package]]
+name = "ushift-jpath"
+version = "0.1.0"
+
+[[package]]
+name = "ushift-spider"
+version = "0.1.0"
+
+[[package]]
+name = "ushift-xpath"
+version = "0.1.0"
