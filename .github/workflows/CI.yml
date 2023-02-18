@@ -86,22 +86,6 @@ jobs:
         command: test
         args: --all --all-features --all-targets
 
-  test-nightly:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
-      with:
-        toolchain: nightly-2022-11-18
-        override: true
-        profile: minimal
-    - uses: Swatinem/rust-cache@v1
-    - name: Run nightly tests
-      working-directory: axum-macros
-      run: |
-        cargo test
-
   test-msrv:
     needs: check
     runs-on: ubuntu-latest
