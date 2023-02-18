@@ -11,10 +11,50 @@
 [Website](https://ushift.dev) |
 [API Docs](https://docs.rs/ushift)
 
-A Rust Library to help you write data extractors the way it should be,
-using a single script and targetting either a pure chrome-like Http client or directly ran in an actual chrome browser.
+A set of libraries to help you fetch, extract and transform data. It is:
+
+* **Fast**: Zero-cost abstractions built on top of the [Tokio](https://github.com/tokio-rs/tokio/) ecosystem;
+* **Useful**: Individually for a specific purpose or as a whole to write a complete data extraction pipeline;
+* **Scalable**: Run your data extraction pipeline anywhere and everywhere.
 
 A Free and Open Source project actively researched and developed by [Plabayo.tech](https://www.plabayo.tech/).
 
 > **WARNING**: this project is a wild west research project, use at your own risk.
 > You can contact [glen@plabayo.tech](mailto:glen@plabayo.tech) if you want to get involved.
+
+## Dreams
+
+The following (non-functional) scripts show the direction that we want to follow
+and what we would like to achieve in the end.
+
+### Data Extraction Pipeline
+
+> Status: ❌
+
+```
+TODO
+```
+
+### Pure Rust Proxy
+
+> Status: ❌
+
+```
+TODO
+```
+
+### Browserless Chromium
+
+> Status: ❌
+
+```
+TODO
+```
+
+### Google Chrome Support
+
+> Status: ❌
+
+```
+TODO
+```
