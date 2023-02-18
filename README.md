@@ -61,3 +61,33 @@ TODO
 ```
 TODO
 ```
+
+## Safety
+
+These crates uses `#![forbid(unsafe_code)]` to ensure everything is implemented in
+100% safe Rust.
+
+> The exception is [ushift-chrome](ushift-crome) as we bind there to C++ code using CXX.
+
+## Minimum supported Rust version
+
+axum's MSRV is 1.60.
+
+## Contributing
+
+:balloon: Thanks for your help improving the project! We are so happy to have
+you! We have a [contributing guide][contributing] to help you get involved in the
+`ushift` project.
+
+## License
+
+This project is licensed under the [MIT license][license].
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in `ushift` by you, shall be licensed as MIT, without any
+additional terms or conditions.
+
+[contributing]: https://github.com/plabayo/ushift/blob/main/CONTRIBUTING.md
+[license]: https://github.com/plabayo/ushift/blob/main/axum/LICENSE

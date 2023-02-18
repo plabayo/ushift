@@ -40,7 +40,8 @@ cargo test --all
 cargo clippy --all
 ```
 
-These tests will also be run in our CI system (using GitHub Actions)
-on both the minimum supported Go version as well as the latest major Go version.
+```bash
+cargo sort --workspace --grouped
+```
 
-By rule of thumb any version of Rust should work, let us known if it doesn't work on a version.
+See [the README](https://github.com/plabayo/ushift#minimum-supported-rust-version) for the minimum supported Rust version (MSRV).
