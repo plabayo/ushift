@@ -67,7 +67,7 @@ TODO
 These crates uses `#![forbid(unsafe_code)]` to ensure everything is implemented in
 100% safe Rust.
 
-> The exception is [ushift-chrome](ushift-crome) as we bind there to C++ code using CXX.
+> The exception is [ushift-chrome](ushift-chrome) as we bind there to C++ code using CXX.
 
 ## Minimum supported Rust version
 
