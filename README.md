@@ -1,5 +1,6 @@
 # ushift
 
+[![Build Status][build-status]][build-url]
 [![Crates.io][crates-badge]][crates-url]
 [![MIT licensed][mit-badge]][mit-url]
 
@@ -7,6 +8,8 @@
 [crates-url]: https://crates.io/crates/ushift
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: https://github.com/plabayo/ushift/blob/main/LICENSE
+[build-status]: https://github.com/plabayo/ushift/actions/workflows/CI.yml/badge.svg?branch=main
+[build-url]: https://github.com/plabayo/ushift/actions/workflows/CI.yml
 
 [Website](https://ushift.dev) |
 [API Docs](https://docs.rs/ushift)
