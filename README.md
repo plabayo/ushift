@@ -71,7 +71,7 @@ These crates uses `#![forbid(unsafe_code)]` to ensure everything is implemented 
 
 ## Minimum supported Rust version
 
-axum's MSRV is 1.60.
+`ushift`'s MSRV is 1.60.
 
 ## Contributing
 
@@ -90,4 +90,4 @@ for inclusion in `ushift` by you, shall be licensed as MIT, without any
 additional terms or conditions.
 
 [contributing]: https://github.com/plabayo/ushift/blob/main/CONTRIBUTING.md
-[license]: https://github.com/plabayo/ushift/blob/main/axum/LICENSE
+[license]: https://github.com/plabayo/ushift/blob/main/ushift/LICENSE
