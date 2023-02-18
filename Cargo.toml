@@ -5,5 +5,5 @@ members = [
   "ushift-chrome",
   "ushift-jpath",
   "ushift-spider",
-  "ushift-xpath"
+  "ushift-xpath",
 ]

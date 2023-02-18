@@ -1,12 +1,12 @@
 [package]
-name = "ushift"
-version = "0.0.0"
-edition = "2021"
 description = "Multi-platform data extraction tool with a single Rust script"
-readme = "../README.md"
+edition = "2021"
 homepage = "https://ushift.dev"
-repository = "https://github.com/plabayo/ushift"
 license = "MIT"
+name = "ushift"
+readme = "../README.md"
+repository = "https://github.com/plabayo/ushift"
+version = "0.0.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
