@@ -19,5 +19,9 @@ name = "ushift-spider"
 version = "0.1.0"
 
 [[package]]
+name = "ushift-transformer"
+version = "0.1.0"
+
+[[package]]
 name = "ushift-xpath"
 version = "0.1.0"
