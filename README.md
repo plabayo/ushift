@@ -14,6 +14,8 @@
 [Website](https://ushift.dev) |
 [API Docs](https://docs.rs/ushift)
 
+![ushift banner](./docs/images/ushift_banner.png)
+
 A set of libraries to help you fetch, extract and transform data. It is:
 
 * **Fast**: Zero-cost abstractions built on top of the [Tokio](https://github.com/tokio-rs/tokio/) ecosystem;
