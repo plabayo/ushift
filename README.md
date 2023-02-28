@@ -1,4 +1,4 @@
-# ushift
+![ushift banner](./docs/images/ushift_banner.png)
 
 [![Build Status][build-status]][build-url]
 [![Crates.io][crates-badge]][crates-url]
@@ -13,8 +13,6 @@
 
 [Website](https://ushift.dev) |
 [API Docs](https://docs.rs/ushift)
-
-![ushift banner](./docs/images/ushift_banner.png)
 
 A set of libraries to help you fetch, extract and transform data. It is:
 
