@@ -25,6 +25,11 @@ A Free and Open Source project actively researched and developed by [Plabayo.tec
 > **WARNING**: this project is a wild west research project, use at your own risk.
 > You can contact [glen@plabayo.tech](mailto:glen@plabayo.tech) if you want to get involved.
 
+## Random Ideas
+
+- Servo and/or its extracted tech xould be used as a web renderer for a single session in a fairly performent manner
+  - of course, while performent, it would probably be very detactable using fingerprinting tech, so uncertain how useful...
+
 ## Dreams
 
 The following (non-functional) scripts show the direction that we want to follow
