@@ -1,0 +1,15 @@
+[package]
+name = "ushift"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+jsonpath-rust = "0.3.0"
+reqwest = "0.11.17"
+serde = "1.0.162"
+serde_json = "1.0.96"
+sxd-xpath = "0.4.2"
+tokio = { version = "1.28.1", features = ["full"] }
