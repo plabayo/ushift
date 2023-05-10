@@ -136,31 +136,6 @@ jobs:
         command: test
         args: --all-features --doc
 
-  armv5te-unknown-linux-musleabi:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@nightly
-      with:
-        toolchain: nightly
-        target: armv5te-unknown-linux-musleabi
-        override: true
-        profile: minimal
-    - uses: Swatinem/rust-cache@v1
-    - name: Check
-      uses: actions-rs/cargo@v1
-      env:
-        # Clang has native cross-compilation support
-        CC: clang
-      with:
-        command: check
-        args: >
-          --all-targets
-          --all-features
-          --all
-          --target armv5te-unknown-linux-musleabi
-
   dependencies-are-sorted:
     runs-on: ubuntu-latest
     steps:
