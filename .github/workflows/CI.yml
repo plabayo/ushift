@@ -18,7 +18,7 @@ jobs:
     - uses: arduino/setup-protoc@v1
     - uses: dtolnay/rust-toolchain@nightly
       with:
-        toolchain: beta
+        toolchain: nightly
         override: true
         profile: minimal
         components: clippy, rustfmt
