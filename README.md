@@ -30,10 +30,6 @@ A Free and Open Source project actively researched and developed by [Plabayo.tec
 These crates uses `#![forbid(unsafe_code)]` to ensure everything is implemented in
 100% safe Rust.
 
-## Minimum supported Rust version
-
-`ushift`'s MSRV is 1.60.
-
 ## Contributing
 
 :balloon: Thanks for your help improving the project! We are so happy to have
