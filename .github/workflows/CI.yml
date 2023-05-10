@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: arduino/setup-protoc@v1
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
         toolchain: beta
         override: true
@@ -39,9 +39,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
-        toolchain: stable
+        toolchain: nightly
         override: true
         profile: minimal
     - uses: Swatinem/rust-cache@v1
@@ -54,9 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
-        toolchain: stable
+        toolchain: nightly
         override: true
         profile: minimal
     - uses: Swatinem/rust-cache@v1
@@ -71,10 +71,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        rust: [stable, beta]
+        rust: [nightly, beta]
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
         toolchain: ${{ matrix.rust }}
         override: true
@@ -91,13 +91,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
         toolchain: ${{ env.MSRV }}
         override: true
         profile: minimal
     - name: "install Rust nightly"
-      uses: dtolnay/rust-toolchain@stable
+      uses: dtolnay/rust-toolchain@nightly
       with:
         toolchain: nightly
         profile: minimal
@@ -124,9 +124,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
-        toolchain: stable
+        toolchain: nightly
         override: true
         profile: minimal
     - uses: Swatinem/rust-cache@v1
@@ -141,9 +141,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
-        toolchain: stable
+        toolchain: nightly
         target: armv5te-unknown-linux-musleabi
         override: true
         profile: minimal
@@ -165,7 +165,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: dtolnay/rust-toolchain@stable
+    - uses: dtolnay/rust-toolchain@nightly
       with:
         toolchain: beta
         override: true
