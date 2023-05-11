@@ -14,12 +14,14 @@ pub enum FetchMethod {
     #[default]
     Get,
     Post,
+    Put,
+    Delete,
 }
 
 #[derive(Debug)]
 pub struct FetchOptions<T: AsRef<str>> {
     pub url: T,
-    pub method: FetchMethod,
+    pub method: Option<FetchMethod>,
     pub headers: Vec<(String, String)>,
     pub body: Option<String>,
 }
@@ -28,14 +30,14 @@ impl<T: AsRef<str>> FetchOptions<T> {
     pub fn new(url: T) -> Self {
         Self {
             url,
-            method: FetchMethod::Get,
+            method: None,
             headers: Vec::new(),
             body: None,
         }
     }
 
     pub fn method(&mut self, method: FetchMethod) -> &mut Self {
-        self.method = method;
+        self.method = Some(method);
         self
     }
 
@@ -45,6 +47,9 @@ impl<T: AsRef<str>> FetchOptions<T> {
     }
 
     pub fn body(&mut self, body: String) -> &mut Self {
+        if self.method.is_none() {
+            self.method = Some(FetchMethod::Post);
+        }
         self.body = Some(body);
         self
     }

@@ -25,10 +25,18 @@ impl WebClient for ReqwestClient {
     ) -> Result<Response, Error> {
         let opts = opts.into();
 
-        let resp = match opts.method {
-            FetchMethod::Get => self.client.get(opts.url.as_ref()).send().await?,
-            FetchMethod::Post => self.client.post(opts.url.as_ref()).send().await?,
+        let mut req = match opts.method.unwrap_or_default() {
+            FetchMethod::Get => self.client.get(opts.url.as_ref()),
+            FetchMethod::Post => self.client.post(opts.url.as_ref()),
+            FetchMethod::Put => self.client.put(opts.url.as_ref()),
+            FetchMethod::Delete => self.client.delete(opts.url.as_ref()),
         };
+
+        for (k, v) in opts.headers {
+            req = req.header(k, v);
+        }
+
+        let resp = req.send().await?;
 
         let status = resp.status().as_u16();
         let headers = resp
